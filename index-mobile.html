@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+    
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+ 
+body{
+ font-family:"Montserrat" ;
+ color:hsl(228, 12%, 48%);
+ font-size: 14px;
+ background-color:hsl(30, 38%, 92%);
+ display: flex;
+ margin: auto;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ width: 375px;
+ height:665px;
+}
+.product{
+ border-radius: 2%;
+ background-color: hsl(0, 0%, 100%);
+ width: 345px;
+ height: 611px;
+}
+.text{
+ display: block;
+ margin-right: 1cm;
+ margin-left: 20px;
+ margin-top: 12px;
+}
+ .perfume {
+ font-size: 12px;
+ margin-top: 17px;
+} 
+
+h1{
+ font-family: "Fraunces";
+ font-weight: 700;
+ font-size: 32px;
+ line-height: 31px;
+ margin-top: 9px;
+ color: hsl(212, 21%, 14%) ;
+}
+p{
+    font-size: 14px;
+    line-height: 22Px;
+    margin-top: 14px;
+}
+
+.cprix{
+    display: flex;
+    margin-top: -6px;
+}
+.prix{
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size:31px ;
+  color:hsl(158, 36%, 37%);
+}
+.anprix{
+  margin-top: 15px;
+  font-size: 12px;
+  margin-left: 23px;
+  text-decoration: line-through;
+}
+
+button{
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 6%;
+  width: 286px;
+  height: 48px;
+  margin-top: -4px;
+  border: none;
+}
+</style>
+</head>
+<body>
+
+  <div class="product">
+    
+    <img src="images/image-product-desktop.jpg"  style="width: 345px; height: 240px;border-top-left-radius: 2%; border-top-right-radius: 2%;">
+    <div class="text">
+     <p class="perfume">P E R F U M E</p>
+     <h1>Gabrielle Essence Eau De Parfum</h1>
+
+     <p id="3">A floral, solar and voluptuous
+        interpretation composed by   
+        Oliver Polge, Perfumer-Creator 
+        for the House of CHANEL.
+     </p>
+     <div class="cprix">
+     <p class="prix">$149.99</p>
+     <p class="anprix">$169.99</p>
+     </div> 
+     <button>Add to Cart</button>
+    </div>
+ </div>
+  
+ <br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kahina-devlop</a>.
+  </div>
+
+</body>
+</html>
